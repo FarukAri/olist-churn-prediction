@@ -393,6 +393,7 @@ widgetsnbextension @ file:///opt/miniconda3/conda-bld/widgetsnbextension_1761556
 wrapt @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_30cvf__dq_/croot/wrapt_1736541623359/work
 wurlitzer @ file:///opt/miniconda3/conda-bld/wurlitzer_1756979036322/work
 xarray @ file:///opt/miniconda3/conda-bld/xarray_1761080735617/work
+xgboost==3.1.3
 xlwings @ file:///opt/miniconda3/conda-bld/xlwings_1758805138759/work
 xyzservices @ file:///opt/miniconda3/conda-bld/xyzservices_1758720201642/work
 yapf @ file:///opt/miniconda3/conda-bld/yapf_1761560514687/work
