@@ -46,7 +46,7 @@ olist-churn-prediction/
 ├── data/                   # Raw and processed data (ignored by git)
 ├── notebooks/              # Jupyter Notebooks for storytelling
 │   └── 2.0_final_churn_model.ipynb  <-- MAIN EXECUTION FILE
-├── src/                    # Source code (The "Engine" Room)
+├── src/                    # Source code
 │   ├── data_prep.py        # Cleaning, Labeling, Feature Engineering
 │   ├── modeling.py         # Training, Evaluation, Prediction
 │   └── visualization.py    # Plotting & Reporting
