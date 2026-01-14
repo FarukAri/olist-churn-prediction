@@ -69,4 +69,5 @@ olist-churn-prediction/
 * **Drift Monitoring:** Implement checks for "Data Drift" (e.g., if delivery times suddenly spike nationwide).
 
 ---
-Author: Faruk Arı
+* Author: Faruk Arı
+* Dataset : https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce

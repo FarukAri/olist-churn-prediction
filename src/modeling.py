@@ -97,6 +97,24 @@ def get_model_coefficients(model: Any, feature_names: List[str]) -> pd.DataFrame
     df_coef['Abs_Impact'] = df_coef['Coefficient'].abs()
     return df_coef.sort_values('Abs_Impact', ascending=False)
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Modelin Test seti için ürettiği olasılıkları alalım
+y_probs = champion_model.predict_proba(X_test_scaled)[:, 1]
+
+# İstatistiğine bakalım
+print(f"Max Olasılık: {y_probs.max():.4f}")
+print(f"Ortalama Olasılık: {y_probs.mean():.4f}")
+
+# Görselleştirelim
+plt.figure(figsize=(10,4))
+sns.histplot(y_probs, bins=50, kde=True)
+plt.axvline(x=0.75, color='r', linestyle='--', label='Senin Eşiğin (0.75)')
+plt.title('Churn Olasılık Dağılımı')
+plt.legend()
+plt.show()
+
 def generate_leads(model: Any, X_scaled: pd.DataFrame, df_raw: pd.DataFrame, threshold: float = 0.75) -> pd.DataFrame:
     """
     Generates a list of high-risk customers by combining model predictions 
